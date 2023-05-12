@@ -1,7 +1,9 @@
-select
-    column4 as game_rating,
-    column2 as game
-from games
-group by 1
-order by 1 desc
-limit 10;
+SELECT
+    rating AS game_rating,
+    app AS game
+FROM games
+WHERE game_rating <> '5.0'
+AND game LIKE '%pixel%'
+GROUP BY 1
+ORDER BY 1 DESC
+LIMIT 10;

@@ -1,7 +1,7 @@
-select
-    column2 as game,
-    column9 as content_rating,
-    column8 as price
-from games
-where content_rating = "Adults only 18+"
-order by game desc;
+SELECT
+    app AS game,
+    content_rating AS content_rating,
+    price AS price
+FROM games
+WHERE content_rating = "Adults only 18+"
+ORDER BY game DESC;

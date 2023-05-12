@@ -1,8 +1,9 @@
-select
-    column2 as game,
-    column12 as android_version,
-    column6 as instals
-from games
-where android_version = "2.2"
-order by instals desc
-limit 15;
+SELECT
+    app AS game,
+    android_ver AS android_version,
+    installs AS instals
+FROM games
+WHERE android_version IN ("2.2", "2.3", "2.2.3")
+AND instals = "1000"
+GROUP BY game
+ORDER BY 2 ASC;
