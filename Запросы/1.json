@@ -1,1 +1,62 @@
-{"type":"query results","query":"select\n    rating as game_rating,\n    app as game\nfrom games\nwhere game_rating <> '5.0'\nand game like '%pixel%'\ngroup by 1\norder by 1 desc\nlimit 10","columns":[{"displayName":"game_rating","name":"rating","database":null,"table":"games","type":""},{"displayName":"game","name":"app","database":null,"table":"games","type":""}],"rows":[["4.9","PixPanda - Color by Number Pixel Art Coloring Book"],["4.8","Pixel Oreo\/P Dark White AMOLED UI - Icon Pack"],["4.7","UNICORN - Color By Number & Pixel Art Coloring"],["4.6","Color by Number - Draw Sandbox Pixel Art"],["4.5","Super Jim Jump - pixel 3d"],["4.4","3D Color Pixel by Number - Sandbox Art Coloring"],["4.3","Pixel Draw - Number Art Coloring Book"],["4.2","Cube Z (Pixel Zombies)"],["4.0","7 Nights at Pixel Pizzeria - 2"],["3.0","Rized ‼️ Color By Number & Pixel Coloring Book"]]}
+{
+    "type": "query results",
+    "query": "SELECT\n    rating AS game_rating,\n    app AS game\nFROM games\nWHERE game_rating <> '5.0'\nAND game LIKE '%pixel%'\nGROUP BY 1\nORDER BY 1 DESC\nLIMIT 10",
+    "columns": [
+        {
+            "displayName": "game_rating",
+            "name": "rating",
+            "database": null,
+            "table": "games",
+            "type": ""
+        },
+        {
+            "displayName": "game",
+            "name": "app",
+            "database": null,
+            "table": "games",
+            "type": ""
+        }
+    ],
+    "rows": [
+        [
+            "4.9",
+            "PixPanda - Color by Number Pixel Art Coloring Book"
+        ],
+        [
+            "4.8",
+            "Pixel Oreo\/P Dark White AMOLED UI - Icon Pack"
+        ],
+        [
+            "4.7",
+            "UNICORN - Color By Number & Pixel Art Coloring"
+        ],
+        [
+            "4.6",
+            "Color by Number - Draw Sandbox Pixel Art"
+        ],
+        [
+            "4.5",
+            "Super Jim Jump - pixel 3d"
+        ],
+        [
+            "4.4",
+            "3D Color Pixel by Number - Sandbox Art Coloring"
+        ],
+        [
+            "4.3",
+            "Pixel Draw - Number Art Coloring Book"
+        ],
+        [
+            "4.2",
+            "Cube Z (Pixel Zombies)"
+        ],
+        [
+            "4.0",
+            "7 Nights at Pixel Pizzeria - 2"
+        ],
+        [
+            "3.0",
+            "Rized ‼️ Color By Number & Pixel Coloring Book"
+        ]
+    ]
+}

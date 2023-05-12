@@ -1,1 +1,44 @@
-{"type":"query results","query":"select\n    column2 as game,\n    column9 as content_rating,\n    column8 as price\nfrom games\nwhere content_rating = \"Adults only 18+\"\norder by game desc","columns":[{"displayName":"game","name":"column2","database":null,"table":"games","type":""},{"displayName":"content_rating","name":"column9","database":null,"table":"games","type":""},{"displayName":"price","name":"column8","database":null,"table":"games","type":""}],"rows":[["Manga Master - Best manga & comic reader","Adults only 18+","0.0"],["Manga Books","Adults only 18+","0.0"],["DraftKings - Daily Fantasy Sports","Adults only 18+","0.0"]]}
+{
+    "type": "query results",
+    "query": "SELECT\n    app AS game,\n    content_rating AS content_rating,\n    price AS price\nFROM games\nWHERE content_rating = \"Adults only 18+\"\nORDER BY game DESC",
+    "columns": [
+        {
+            "displayName": "game",
+            "name": "app",
+            "database": null,
+            "table": "games",
+            "type": ""
+        },
+        {
+            "displayName": "content_rating",
+            "name": "content_rating",
+            "database": null,
+            "table": "games",
+            "type": ""
+        },
+        {
+            "displayName": "price",
+            "name": "price",
+            "database": null,
+            "table": "games",
+            "type": ""
+        }
+    ],
+    "rows": [
+        [
+            "Manga Master - Best manga & comic reader",
+            "Adults only 18+",
+            "0.0"
+        ],
+        [
+            "Manga Books",
+            "Adults only 18+",
+            "0.0"
+        ],
+        [
+            "DraftKings - Daily Fantasy Sports",
+            "Adults only 18+",
+            "0.0"
+        ]
+    ]
+}
