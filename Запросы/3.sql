@@ -6,4 +6,4 @@ FROM games
 WHERE android_version IN ("2.2", "2.3", "2.2.3")
 AND instals = "1000"
 GROUP BY game
-ORDER BY 2 ASC;
+ORDER BY android_version ASC;

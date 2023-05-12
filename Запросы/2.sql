@@ -5,4 +5,4 @@ FROM games
 WHERE game LIKE '% real %'
 AND version = '1.1'
 OR version = '1.1.1'
-ORDER BY 1 ASC;
+ORDER BY game ASC;

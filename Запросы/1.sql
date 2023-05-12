@@ -4,6 +4,6 @@ SELECT
 FROM games
 WHERE game_rating <> '5.0'
 AND game LIKE '%pixel%'
-GROUP BY 1
-ORDER BY 1 DESC
+GROUP BY game_rating
+ORDER BY game_rating DESC
 LIMIT 10;

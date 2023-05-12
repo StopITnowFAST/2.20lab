@@ -6,4 +6,4 @@ SELECT DISTINCT
 FROM games
 WHERE price <> "0.0" 
 AND game LIKE "%free%"
-GROUP BY 1;
+GROUP BY game;
