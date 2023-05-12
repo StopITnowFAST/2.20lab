@@ -4,6 +4,6 @@
 SELECT 
 	timezone,
 	count(*) as city_count
-FROM city_count
-GROUP BY 1
-ORDER BY 2 desc;
+FROM city
+GROUP BY timezone
+ORDER BY city_count desc;
